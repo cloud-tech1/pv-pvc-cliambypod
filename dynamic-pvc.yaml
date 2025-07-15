@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name:  dynamic-pvc 
+spec:
+  storageClassName: azurefile
+  accessModes: 
+  -  ReadWriteMany
+  resources:
+    requests:
+       storage: 2Gi
+  volumeMode: Filesystem
+
+ 
